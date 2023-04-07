@@ -1,0 +1,20 @@
+services=(
+  aix
+  subfinder
+  dnsx
+  naabu
+  httpx
+  nuclei
+  uncover
+  cloudlist
+  proxify
+  tlsx
+  notify
+  chaos-client
+  shuffledns
+  mapcidr
+  interactsh-client
+  katana
+  asnmap
+  simplehttpserver
+)

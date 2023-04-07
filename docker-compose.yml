@@ -1,0 +1,147 @@
+version: '3'
+services:
+
+  aix:
+    container_name: aix
+    hostname: aix
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/aix:/root/.pdtm/go/bin/aix
+  subfinder:
+    container_name: subfinder
+    hostname: subfinder
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/subfinder:/root/.pdtm/go/bin/subfinder
+  dnsx:
+    container_name: dnsx
+    hostname: dnsx
+    build:
+      context: ./image_docker
+      dockerfile: socle_debian_Dockerfile
+    volumes:
+      - ./bin/dnsx:/root/.pdtm/go/bin/dnsx
+  naabu:
+    container_name: naabu
+    hostname: naabu
+    build:
+      context: ./image_docker
+      dockerfile: socle_debian_Dockerfile
+    volumes:
+      - ./bin/naabu:/root/.pdtm/go/bin/naabu
+  httpx:
+    container_name: httpx
+    hostname: httpx
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/httpx:/root/.pdtm/go/bin/httpx
+  nuclei:
+    container_name: nuclei
+    hostname: nuclei
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/nuclei:/root/.pdtm/go/bin/nuclei
+  uncover:
+    container_name: uncover
+    hostname: uncover
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/uncover:/root/.pdtm/go/bin/uncover
+  cloudlist:
+    container_name: cloudlist
+    hostname: cloudlist
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/cloudlist:/root/.pdtm/go/bin/cloudlist
+  proxify:
+    container_name: proxify
+    hostname: proxify
+    build:
+      context: ./image_docker
+      dockerfile: socle_debian_Dockerfile
+    volumes:
+      - ./bin/proxify:/root/.pdtm/go/bin/proxify
+  tlsx:
+    container_name: tlsx
+    hostname: tlsx
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/tlsx:/root/.pdtm/go/bin/tlsx
+  notify:
+    container_name: notify
+    hostname: notify
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/notify:/root/.pdtm/go/bin/notify
+  chaos-client:
+    container_name: chaos-client
+    hostname: chaos-client
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/chaos-client:/root/.pdtm/go/bin/chaos-client
+  shuffledns:
+    container_name: shuffledns
+    hostname: shuffledns
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/shuffledns:/root/.pdtm/go/bin/shuffledns
+  mapcidr:
+    container_name: mapcidr
+    hostname: mapcidr
+    build:
+      context: ./image_docker
+      dockerfile: socle_debian_Dockerfile
+    volumes:
+      - ./bin/mapcidr:/root/.pdtm/go/bin/mapcidr
+  interactsh-client:
+    container_name: interactsh-client
+    hostname: interactsh-client
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/interactsh-client:/root/.pdtm/go/bin/interactsh-client
+  katana:
+    container_name: katana
+    hostname: katana
+    build:
+      context: ./image_docker
+      dockerfile: socle_alpine_Dockerfile
+    volumes:
+      - ./bin/katana:/root/.pdtm/go/bin/katana
+  asnmap:
+    container_name: asnmap
+    hostname: asnmap
+    build:
+      context: ./image_docker
+      dockerfile: socle_debian_Dockerfile
+    volumes:
+      - ./bin/asnmap:/root/.pdtm/go/bin/asnmap
+  simplehttpserver:
+    container_name: simplehttpserver
+    hostname: simplehttpserver
+    build:
+      context: ./image_docker
+      dockerfile: socle_debian_Dockerfile
+    volumes:
+      - ./bin/simplehttpserver:/root/.pdtm/go/bin/simplehttpserver

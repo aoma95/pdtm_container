@@ -1,0 +1,11 @@
+version: '3'
+services:
+  pdtm:
+    container_name: pdtm
+    hostname: pdtm
+    build:
+      context: ../image_docker
+      dockerfile: pdtm_Dockerfile
+    volumes:
+      - ../bin/:/root/.pdtm/go/bin/
+    command: ["pdtm", "-ia"]

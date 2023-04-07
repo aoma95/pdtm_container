@@ -1,0 +1,27 @@
+FROM alpine:3.17.2
+#ARG ALIAS_NAME
+
+#ENV ALIAS_NAME=$ALIAS_NAME
+ENV PATH="/root/.pdtm/go/bin:${PATH}"
+RUN apk -U upgrade --no-cache \
+    && apk add --no-cache bind-tools ca-certificates libpcap nmap libpcap-dev nmap-scripts
+#    && echo "alias $ALIAS_NAME='/root/.pdtm/go/bin/$ALIAS_NAME'" >> /etc/profile.d/aliases.sh \
+#    && chmod +x /etc/profile.d/aliases.sh
+
+#RUN source /etc/profile.d/aliases.sh
+#CMD ["/bin/sh", "-c", "source /etc/profile;d/aliases.sh && sleep infinity"]
+#CMD ["/bin/sh", "-c","sleep infinity"]
+#CMD ["/bin/sh", "-c", "source /etc/profile/aliases.sh"]
+#ARG ALIAS_NAME
+#RUN echo "alias $ALIAS_NAME='/root/.pdtm/go/bin'" >> /root/.bashrc
+#RUN echo "alias ll='ls -alF'" >> /root/.bashrc
+
+CMD ["/bin/sh","-c","sleep infinity"]
+#ENTRYPOINT ["/usr/local/bin/script.sh"]
+#ENTRYPOINT ["/bin/bash", "-c", "tail -f /dev/null"]
+#ENTRYPOINT ["/bin/sh", "-c", "/root/.pdtm/go/bin"]
+#CMD ["-h"]
+#CMD ["tail", "-f", "/dev/null"]
+#ENV ALIAS_NAME=$ALIAS_NAME
+
+#COPY alias.sh /etc/profile.d/

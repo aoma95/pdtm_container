@@ -1,0 +1,21 @@
+FROM ubuntu
+
+ENV PATH="/root/.pdtm/go/bin:${PATH}"
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    bind9-host \
+    ca-certificates \
+    libpcap0.8 \
+    nmap \
+    libpcap-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+
+#CMD ["sleep", "infinity"]
+#FROM alpine:3.17.2
+
+#ENV PATH="/root/.pdtm/go/bin:${PATH}"
+#RUN apk -U upgrade --no-cache \
+#    && apk add --no-cache bind-tools ca-certificates libpcap nmap libpcap-dev nmap-scripts
+
+CMD ["/bin/sh","-c","sleep infinity"]
