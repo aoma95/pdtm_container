@@ -83,9 +83,7 @@ OPTION :
   -rm  : Supprimer l'install de TATOOINE
   -a   : Permet d'integrer les alias
   -rma : Permet de supprimer les alias
-
 Liste des alias :
-
 use_aix='docker exec aix aix' |  in_aix='docker exec -it aix /bin/sh' | pipe_use_aix='docker exec -i aix aix'
 use_subfinder='docker exec subfinder subfinder' |  in_subfinder='docker exec -it subfinder /bin/sh' | pipe_use_subfinder='docker exec -i subfinder subfinder'
 use_dnsx='docker exec dnsx dnsx' |  in_dnsx='docker exec -it dnsx /bin/sh' | pipe_use_dnsx='docker exec -i dnsx dnsx'
