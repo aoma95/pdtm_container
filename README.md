@@ -1,12 +1,8 @@
 # Project
 
 ░▀█▀░█▀█░▀█▀░█▀█░█▀█░▀█▀░█▀█░█▀▀ Dev: Dan ESPOSITO
-
 ░░█░░█▀█░░█░░█░█░█░█░░█░░█░█░█▀▀
-
-░░▀░░▀░▀░░▀░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀
-
-                                 Version:0.1
+░░▀░░▀░▀░░▀░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀Version:0.1
 
 Tatooine est un outil open source basé sur ProjectDiscovery
 Pdtm qui permet aux développeurs de simplifier l'installation et l'utilisation des outils de sécurité de ProjectDiscovery
