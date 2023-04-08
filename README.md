@@ -1,8 +1,11 @@
 # Project
 
 ░▀█▀░█▀█░▀█▀░█▀█░█▀█░▀█▀░█▀█░█▀▀ Dev: Dan ESPOSITO
+
 ░░█░░█▀█░░█░░█░█░█░█░░█░░█░█░█▀▀
+
 ░░▀░░▀░▀░░▀░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀
+
                                  Version:0.1
 
 Tatooine est un outil open source basé sur ProjectDiscovery
