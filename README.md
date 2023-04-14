@@ -129,8 +129,15 @@ in_NomDuService Cette commande exécute la commande 'docker exec -it **NomDuServ
 
 pipe_use_**NomDuService** Cette commande exécute la commande 'docker exec -i **NomDuService** **NomDuService**'
 
+## Afficher le helper du service : 
+
+```bash
+use_**NomDuService** -h
+```
 
 ## Exemple
+
+### DNSX & SUBFINDER
 
 #### Commande de base :
 
@@ -140,4 +147,65 @@ Se transforme en :   **(ÉVITEZ D'UTILISER L'ARGUMENT -silent)**
 
 use_subfinder -d hackerone.com | pipe_use_dnsx  -a -resp
 
+### CHAOS CLIENT
+il faut exporter un clé API : 
+```bash
+use_chaos-client export CHAOS_KEY=CHAOS_API_KEY
+```
+#### Commande de base :
 
+chaos -d uber.com -silent
+
+Se transforme en :   **(ÉVITEZ D'UTILISER L'ARGUMENT -silent)**
+
+use_chaos-client -d uber.com
+
+### PROXIFY
+
+#### Commande de base :
+
+proxify -pt '(.*\.)?google\.co.in.*'
+
+Se transforme en :   **(ÉVITEZ D'UTILISER L'ARGUMENT -silent)**
+
+use_profixy -pt '(.*\.)?google\.co.in.*'
+
+###  ASNMAP
+
+#### Commande de base :
+
+echo GOOGLE | ./asnmap
+
+Se transforme en :   **(ÉVITEZ D'UTILISER L'ARGUMENT -silent)**
+
+echo GOOGLE | pipe_use_asnmap
+
+### NOTIFY
+
+#### Commande de base :
+
+subfinder -d hackerone.com | notify
+
+Se transforme en :   **(ÉVITEZ D'UTILISER L'ARGUMENT -silent)**
+
+use_subfinder -d hackerone.com | pipe_use_notify
+
+### MAPCIDR
+
+#### Commande de base :
+
+echo "192.168.0.0-192.168.0.5" | mapcidr
+
+Se transforme en :   **(ÉVITEZ D'UTILISER L'ARGUMENT -silent)**
+
+echo "192.168.0.0-192.168.0.5" | pipe_use_mapcidr
+
+### NUCLEI
+
+#### Commande de base :
+
+nuclei -u https://example.com
+
+Se transforme en :   **(ÉVITEZ D'UTILISER L'ARGUMENT -silent)**
+
+use_nuclei -u https://example.com
